@@ -151,7 +151,8 @@ nav a:hover {
     text-align: center;
 }
 #work h2 {
-    margin: 25px 0;
+    margin-top: 35px;
+    margin-bottom: -25px;
 }
 
 #work h3 {
