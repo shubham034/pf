@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shubham Mahajan</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#">
+            <h1>SHUBHAM</h1>
+        </a>
+
+        <a id="menu" class="header__menu">
+            <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+                />
+            </svg>
+        </a>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Projects</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <main>
+        <section class="hero">
+            <section>
+                <h2>Hello There,</h2>
+                <p>My name is
+                    <span>Shubham Mahajan</span>
+                </p>
+                <p>I'm a
+                    <h2>Front-End Developer.</h2>
+                    Who focuses on writing clean, elegant and efficient code.
+                </p>
+            </section>
+
+            <section>
+                <img src="F:\pf\images\flip.jpg" alt="image of developer">
+            </section>
+
+        </section>
+
+        <h3>Featured Work</h3>
+        <section class="work">
+            <div>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption>
+                        <h3>Interactive Resume</h3>
+                        <p></p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption>
+                        <h3>Safa Motors</h3>
+                        <p></p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption>
+                        <h3>To-Do List</h3>
+                        <p></p>
+                    </figcaption>
+                </figure>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <h3>Contact </h3>
+
+    </footer>
+
+    <script>
+        // open the drawer when the menu is clicked
+        var menu = document.querySelector("#menu");
+        var main = document.querySelector("body");
+        var drawer = document.querySelector("nav");
+
+        menu.addEventListener('click', function (e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+        });
+
+        main.addEventListener('click', function () {
+            drawer.classList.remove('open');
+        });
+    </script>
+
+</body>
+
+</html>
