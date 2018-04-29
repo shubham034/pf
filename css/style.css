@@ -1,10 +1,31 @@
 
 body {
     color: #697681;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lato', sans-serif;
+    
 }
 
 h1, h2, h3, h4, h5 {
     margin: 0;
+    color: #2e3d49;
+    
+}
+
+header h1 {
+    letter-spacing: 0.15em;
+    font-weight: initial;
+}
+.hero h2 {
+    color: white;
+}
+
+h2 {
+    font-weight: 400;
+}
+h3 {
+    font-weight: bold;
 }
 
 header, nav, footer, section, article, div {
@@ -31,7 +52,7 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
     min-height: 56px;
     transition: min-height 0.3s;
-    padding: 10px 0;  
+    padding: 25px 0;   
 }
 
 header > a {
@@ -51,8 +72,8 @@ nav {
     width: 300px;
     position: absolute;
     /* This trasform moves the drawer off canvas. */
-    -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0);
+    -webkit-transform: translate(-400px, 0);
+    transform: translate(-400px, 0);
     /* Optionally, we animate the drawer. */
     transition: transform 0.3s ease;
 }
@@ -62,9 +83,11 @@ nav.open {
     transform: translate(0, 0);
 }
 
+
 nav ul li {
     display: list-item;
-    border-bottom: 1px solid #E0E0E0;
+    background: rgba(2, 179, 228, 0.9);
+    /* border-bottom: 1px solid #E0E0E0; */
     width: 100%;
     text-align: left;
     line-height: 24px;
@@ -74,7 +97,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #616161;
+    color: white;
     padding: 1.5em;
 }
 
@@ -83,3 +106,80 @@ nav a:hover {
     color: #212121;
   }
   
+/* hero */
+
+.hero {
+    background-image: url(https://1onjea25cyhx3uvxgs4vu325-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/cropped-chalkboard-image.jpg);
+    background-size: cover; 
+    background-position: center;  
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.hero section:first-child {
+    padding: 50px 15px 5px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    padding: 70px 0 15px 15px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.hero section:nth-child(2) {
+    color: #FFFFFF;
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: 1.5em;
+    padding: 20px 0 20px 15px;
+    width: 50%;
+}
+
+.hero section:last-child {
+    width: 50%;
+    padding: 20px 0 20px;    
+    padding-left: 25px;
+    
+}
+#shubham {
+    height: 300px;
+}
+
+/* Featured Work */
+#work {
+    text-align: center;
+}
+#work h2 {
+    margin: 25px 0;
+}
+
+#work h3 {
+    margin-top: 10px;
+}
+
+#work img {
+    width: 100%;
+}
+
+#work div {
+    margin: 50px 0;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+}
+
+footer h2 {
+    margin: 10px 0;
+}
+
+footer ul {
+    margin: 20px 0;
+}
+footer ul li{
+    display: inline;
+    padding: 0 10px;
+}
