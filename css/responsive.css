@@ -1,0 +1,135 @@
+
+
+@media screen and (min-width: 700px) {
+    svg {
+        display: none;
+    }
+
+    header a {
+        width: 100%;
+    }
+    
+    h1 {
+        font-weight: 300;
+        font-size: 2em;
+        margin: 0.4em 0.15em;
+        width: 100%;
+    }
+
+    #shubham {
+        height: 400px;
+        margin-top: -60px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav ul li{
+        display: inline;
+        color: #02b3e4;
+    }
+
+    header {
+        width: 30%;    
+        padding: 10px 0;   
+    }
+
+    nav {
+        width: 70%;
+        padding: 10px 0;
+        
+        background: white;
+    }
+    nav a {
+        padding: 0;
+        color: rgb(105, 118, 129);
+        font-size: 17px;
+        line-height: 24px;
+        transition: color 0.3s ease;
+        text-transform: none;
+    }
+
+    nav a:hover {
+        text-decoration: none;
+        color: #02b3e4;
+    }
+    nav ul {
+        padding: 20px 10px;
+        float: right;
+    }
+
+    nav ul li {
+        /* padding: 40px 5px; */
+        background-color: transparent;
+    }
+    
+    .hero section:first-child{
+        padding-left: 30px;
+        font-weight: 300;
+        font-size: 1em;
+    }
+    .hero section:nth-child(2) {
+        width: 70%;
+        padding-left: 30px;
+    }
+    .hero section:last-child {
+        width: 30%;
+    }
+
+    #work div {
+        width: 80%;
+        margin: 80px auto;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .hero section:nth-child(2) {
+        color: #FFFFFF;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 1.5em;
+        /* padding-lefT: 15px; */
+        max-width: 80%;
+    }
+
+    #shubham {
+        margin-top: -150px;
+    }
+    
+    #work h2 {
+        margin-top: 55px;
+        margin-bottom: -15px;
+        text-align: left;
+        width: 100%;
+    }
+
+    #work {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+    #work div {
+        width: 33.3333%;
+    }
+
+    .container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #shubham {
+        /* margin-right: 30px; */
+    }
+
+    
+}

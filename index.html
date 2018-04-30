@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shubham Mahajan</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-
+    <div class="container">
     <header>
 
         <a href="#">
@@ -29,7 +30,7 @@
         </a>
     </header>
 
-    <nav>
+    <nav class="on">
         <ul>
             <li>
                 <a href="#">About</a>
@@ -42,13 +43,13 @@
             </li>
         </ul>
     </nav>
-
+    </div>
 
 
     <main>
         <section class="hero">
             <section>
-                <h2>Hello There,</h2>
+                <p>Hello There,</p>
                 <p>My name is
                     <strong>Shubham Mahajan</strong>
                 </p>
@@ -115,7 +116,7 @@
 
     <script>
         // open the drawer when the menu is clicked
-        var menu = document.querySelector("#menu");
+        var menu = document.querySelector("svg");
         var main = document.querySelector("body");
         var drawer = document.querySelector("nav");
 
@@ -127,6 +128,20 @@
         main.addEventListener('click', function () {
             drawer.classList.remove('open');
         });
+
+    
+       function nav() {
+           if(x.matches) {
+               document.querySelector("nav").classList.remove("on");
+           }
+           else {
+            document.querySelector("nav").classList.add("on");
+               
+           }
+       }
+       var x = window.matchMedia("(min-width: 700px)");
+       nav();
+       x.addListener(nav);
     </script>
 
 </body>
